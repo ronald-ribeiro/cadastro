@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/style_cadastro.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <header class="header">
+        <nav  class="navbar">
+            <a href="./login.html">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Serviços</a>
+            <a href="#">Contatos</a>
+        </nav>
+
+        <form action="#" class="search-bar">
+            <input type="text" placeholder="Pesquisa...">
+            <button type="submit"><i class='bx bx-search'></i></button>
+        </form>
+    </header>
+
+    <div class="background">
+
+    </div>
+
+    <div class="container">
+
+        <div class="logreg-box">
+            <div class="form-box cadastro">
+                <form action="cadastro.php" method="POST">
+                    <h2>Cadastrar</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></span>
+                        <input type="text" id="user" name="user"required>
+                        <label for="user">Nome</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-envelope' ></i></span>
+                        <input type="email" required>
+                        <label>E-mail</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                        <input type="password" id="password" name="password" required>
+                        <label for="password">Senha</label>
+                    </div>
+
+                    <div class="input-gender">
+                        <span class="icon"><i class='bx bx-female-sign' ></i></i></span>
+                        <input type="radio" id="female" name="gender"required>
+                        <label for="female">Femenino</label>
+                    </div>
+
+                    <div class="input-gender">
+                        <span class="icon"><i class='bx bx-male-sign' ></i></span>
+                        <input type="radio" id="male" name="gender"required>
+                        <label for="male">Masculino</label>
+                    </div>
+
+                    <div class="input-gender">
+                        <span class="icon"><i class='bx bx-face' ></i></i></span>
+                        <input type="radio" id="other" name="gender"required>
+                        <label for="other">Outros</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox" required>Eu aceitos os termos!</label>
+                    </div>
+
+                    <button type="submit" id="submit" name="gender" class="btn">Cadastrar</button>
+
+                    <div class="login-register">
+                    <p>Já tem uma conta? <a href="./login.html" class="register-link">Faça Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
